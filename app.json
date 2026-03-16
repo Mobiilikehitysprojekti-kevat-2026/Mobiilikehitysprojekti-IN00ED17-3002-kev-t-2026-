@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "FridgeChef AI",
+    "slug": "fridgechef-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#071A08"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Use the camera to scan ingredients in your fridge.",
+        "NSPhotoLibraryUsageDescription": "Choose ingredient photos from your library."
+      },
+      "bundleIdentifier": "com.anonymous.fridgechef-ai"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose ingredient photos from your library.",
+          "cameraPermission": "Allow FridgeChef AI to use the camera to scan ingredients."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
