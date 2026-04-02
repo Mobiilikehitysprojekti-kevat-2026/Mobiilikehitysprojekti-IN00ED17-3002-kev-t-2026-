@@ -12,7 +12,6 @@ import { PantryHubScreen } from '../screens/PantryHubScreen';
 import { RecipeScreen } from '../screens/RecipeScreen';
 import { RecipesHubScreen } from '../screens/RecipesHubScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
-import { AnalysisStatisticsScreen } from '../screens/AnalysisStatisticsScreen';
 import type { RootStackParamList } from './types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -54,7 +53,6 @@ export function RootNavigator() {
         <Stack.Screen component={RecipeScreen} name="Recipe" options={{ animation: 'fade_from_bottom' }} />
         <Stack.Screen component={CookingModeScreen} name="CookingMode" options={{ animation: 'fade_from_bottom' }} />
         <Stack.Screen component={CompletionScreen} name="Completion" options={{ animation: 'fade' }} />
-        <Stack.Screen component={AnalysisStatisticsScreen} name="AnalysisStatistics" options={{ animation: 'slide_from_right' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

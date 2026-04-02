@@ -26,5 +26,4 @@ export type RootStackParamList = {
     recipe: RecipeDTO;
     sourceImageUri?: string;
   };
-  AnalysisStatistics: undefined;
 };
