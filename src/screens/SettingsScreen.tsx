@@ -78,6 +78,28 @@ export function SettingsScreen({ navigation }: ScreenProps) {
                     </View>
 
                     <View style={styles.card}>
+                        <Text style={styles.cardLabel}>{t('dataInsights')}</Text>
+                        <Text style={styles.cardBody}>{t('dataInsightsDesc')}</Text>
+
+                        <View style={styles.optionList}>
+                            <Pressable
+                                accessibilityRole="button"
+                                onPress={() => navigation.navigate('AnalysisStatistics')}
+                                style={styles.optionButton}
+                            >
+                                <View>
+                                    <Text style={styles.optionTitle}>{t('dataInsights')}</Text>
+                                </View>
+                                <MaterialCommunityIcons
+                                    color={palette.textSecondary}
+                                    name="chevron-right"
+                                    size={24}
+                                />
+                            </Pressable>
+                        </View>
+                    </View>
+
+                    <View style={styles.card}>
                         <Text style={styles.cardLabel}>{t('voiceGuidance')}</Text>
                         <Text style={styles.cardBody}>{t('voiceGuidanceDescription')}</Text>
                     </View>
